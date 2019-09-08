@@ -1,5 +1,32 @@
 # 仿照网易云做到 WebApp
+
+---
+
 - 跟着三元大佬做的一款网易云音乐的 WebApp（三元大佬电子书链接：https://sanyuan0704.github.io/react-cloud-music/）
+
+---
+
+## 目前项目我还没完成……
+你可以通过三元大佬的电子书或[我的博客](https://lemonsea.github.io/)跟踪进度，如果有 react、readux、react Hooks 基础的同学可以跟着三元大佬的电子书做，如果看电子书感觉吃力，再来看[我的博客](https://lemonsea.github.io/)吧。加入三元大佬创建的群聊可以直接向大佬学习 ：）
+
+---
+
+## src 目录改造
+```
+├─api                   // 网路请求代码、工具类函数和相关配置
+├─application           // 项目核心功能
+├─assets                // 字体配置及全局样式
+├─baseUI                // 基础UI轮子
+├─components            // 可复用的UI组件
+├─routes                // 路由配置文件
+└─store                 // redux相关文件
+  App.js                // 根组件
+  index.js              // 入口文件
+  serviceWorker.js      // PWA离线应用配置
+  style.js              // 默认样式
+```
+
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
