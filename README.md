@@ -3,10 +3,13 @@
 ---
 
 - 跟着三元大佬做的一款网易云音乐的 WebApp（三元大佬电子书链接：https://sanyuan0704.github.io/react-cloud-music/）
+  
+- 主要技术栈：react hooks + redux + immutable.js + rem
 
 ---
 
-- 第一章内容完成
+- 第一章内容[全局样式与路由配置](https://lemonsea.github.io/2019/09/08/%E4%BB%BF%E7%BD%91%E6%98%93%E4%BA%91%E5%81%9A%E7%9A%84%20WebApp%EF%BC%88%E4%B8%80%EF%BC%89/#more)
+- 第二章内容完成
 
 ## 目前项目我还没完成……
 你可以通过三元大佬的电子书或[我的博客](https://lemonsea.github.io/)跟踪进度，如果有 react、readux、react Hooks 基础的同学可以跟着三元大佬的电子书做，如果看电子书感觉吃力，再来看[我的博客](https://lemonsea.github.io/)吧。加入三元大佬创建的群聊可以直接向大佬学习 ：）
