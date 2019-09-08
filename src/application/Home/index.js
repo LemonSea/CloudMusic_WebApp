@@ -11,7 +11,7 @@ function Home(props) {
     <div>
       <Top>
         <span className="iconfont menu">&#xe65c;</span>
-        <span className="title">CloudMusic WebApp</span>
+        <span className="title">CloudMusic</span>
         <span className="iconfont search">&#xe62b;</span>
       </Top>
       <Tab>
