@@ -15,6 +15,11 @@ export const changeRecommendList = (data) => ({
     data: fromJS(data)
 });
 
+export const changeEnterLoading = (data) => ({
+    type: actionTypes.CHANGE_ENTER_LOADING,
+    data
+});
+
 // 获取轮播图数据
 export const getBannerList = () => {
     return (dispatch) => {
@@ -26,10 +31,12 @@ export const getBannerList = () => {
     }
 };
 
+//另外在获取推荐歌单后，应把loading状态改为false
 export const getRecommendList = () => {
     return (dispatch) => {
         getRecommendListRequest().then(data => {
             dispatch(changeRecommendList(data.result));
+            dispatch(changeEnterLoading(false));//改变loading
         }).catch(() => {
             console.log("推荐歌单数据传输错误");
         });

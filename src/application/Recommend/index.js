@@ -5,9 +5,9 @@ import Scroll from '../../baseUI/scroll';
 import styled from 'styled-components';
 //引入forceCheck方法
 import { forceCheck } from 'react-lazyload';
-
 import { connect } from "react-redux";
 import * as actionCreaters from './store/actionCreators';
+import Loading from '../../baseUI/loading';
 
 export const Content = styled.div`
   position: fixed;
@@ -30,15 +30,21 @@ function Recommend(props) {
     //     }
     // });
 
-    const { bannerList, recommendList } = props;
+    const { bannerList, recommendList, enterLoading } = props;
     const bannerListJS = bannerList ? bannerList.toJS() : [];
     const recommendListJS = recommendList ? recommendList.toJS() : [];
 
     const { getBannerDataDispatch, getRecommendListDataDispatch } = props;
 
     useEffect(() => {
-        getBannerDataDispatch();
-        getRecommendListDataDispatch();
+        //如果页面有数据，则不发请求
+        //immutable数据结构中长度属性size
+        if (!bannerList.size) {
+            getBannerDataDispatch();
+        }
+        if (!recommendList.size) {
+            getRecommendListDataDispatch();
+        }
         // eslint-disable-next-line
     }, []);
 
@@ -50,6 +56,7 @@ function Recommend(props) {
                     <List recommendList={recommendListJS}></List>
                 </div>
             </Scroll>
+            {enterLoading ? <Loading></Loading> : null}
         </Content>
     )
 }
@@ -58,6 +65,7 @@ const mapStateToProps = (state) => ({
     // 不要再这里将数据toJS,不然每次diff比对props的时候都是不一样的引用，还是导致不必要的重渲染, 属于滥用immutable
     bannerList: state.getIn(['recommend', 'bannerList']),
     recommendList: state.getIn(['recommend', 'recommendList']),
+    enterLoading: state.getIn(['recommend', 'enterLoading'])
 })
 // 映射dispatch到props上
 const mapDispatchToProps = (dispatch) => {
