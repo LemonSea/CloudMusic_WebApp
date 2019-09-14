@@ -8,9 +8,13 @@
 
 ---
 
-- 第一章内容[全局样式与路由配置](https://lemonsea.github.io/2019/09/08/%E4%BB%BF%E7%BD%91%E6%98%93%E4%BA%91%E5%81%9A%E7%9A%84%20WebApp%EF%BC%88%E4%B8%80%EF%BC%89/#more)
-- 第二章内容[Home组件开发与rem布局](https://lemonsea.github.io/2019/09/09/%E4%BB%BF%E7%BD%91%E6%98%93%E4%BA%91%E5%81%9A%E7%9A%84%20WebApp%EF%BC%88%E4%BA%8C%EF%BC%89/#more)
+- 第一章内容[全局样式与路由配置](https://lemonsea.github.io/2019/09/08/%E4%BB%BF%E7%BD%91%E6%98%93%E4%BA%91%E5%81%9A%E7%9A%84%20WebApp%EF%BC%88%E4%B8%80%EF%BC%89/)
+- 第二章内容[Home组件开发与rem布局](https://lemonsea.github.io/2019/09/09/%E4%BB%BF%E7%BD%91%E6%98%93%E4%BA%91%E5%81%9A%E7%9A%84%20WebApp%EF%BC%88%E4%BA%8C%EF%BC%89/)
 - 第三章内容[redux的使用和搭建store的结构](https://lemonsea.github.io/2019/09/09/%E4%BB%BF%E7%BD%91%E6%98%93%E4%BA%91%E5%81%9A%E7%9A%84%20WebApp%EF%BC%88%E4%B8%89%EF%BC%89/)
+- 第四章内容[轮播图、列表](https://lemonsea.github.io/2019/09/10/%E4%BB%BF%E7%BD%91%E6%98%93%E4%BA%91%E5%81%9A%E7%9A%84%20WebApp%EF%BC%88%E5%9B%9B%EF%BC%89/)
+- 第五章内容[scroll(滑动）组件的开发](https://lemonsea.github.io/2019/09/11/%E4%BB%BF%E7%BD%91%E6%98%93%E4%BA%91%E5%81%9A%E7%9A%84%20WebApp%EF%BC%88%E4%BA%94%EF%BC%89/)
+- 第六章内容[axios与redux的数据层开发](https://lemonsea.github.io/2019/09/12/%E4%BB%BF%E7%BD%91%E6%98%93%E4%BA%91%E5%81%9A%E7%9A%84%20WebApp%EF%BC%88%E5%85%AD%EF%BC%89/)
+- 第七章内容[图片懒加载与Loading 动画(Recommend完成)](https://lemonsea.github.io/2019/09/13/%E4%BB%BF%E7%BD%91%E6%98%93%E4%BA%91%E5%81%9A%E7%9A%84%20WebApp%EF%BC%88%E4%B8%83%EF%BC%89/)
 
 ## 目前项目我还没完成……
 你可以通过三元大佬的电子书或[我的博客](https://lemonsea.github.io/)跟踪进度，如果有 react、readux、react Hooks 基础的同学可以跟着三元大佬的电子书做，如果看电子书感觉吃力，再来看[我的博客](https://lemonsea.github.io/)吧。加入三元大佬创建的群聊可以直接向大佬学习 ：）
