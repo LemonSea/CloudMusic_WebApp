@@ -3,6 +3,8 @@ import Slider from '../../components/slider';
 import List from '../../components/list';
 import Scroll from '../../baseUI/scroll';
 import styled from 'styled-components';
+//引入forceCheck方法
+import { forceCheck } from 'react-lazyload';
 
 import { connect } from "react-redux";
 import * as actionCreaters from './store/actionCreators';
@@ -37,11 +39,12 @@ function Recommend(props) {
     useEffect(() => {
         getBannerDataDispatch();
         getRecommendListDataDispatch();
+        // eslint-disable-next-line
     }, []);
 
     return (
         <Content>
-            <Scroll className="list">
+            <Scroll className="list" onScroll={forceCheck}>
                 <div>
                     <Slider bannerList={bannerListJS}></Slider>
                     <List recommendList={recommendListJS}></List>
